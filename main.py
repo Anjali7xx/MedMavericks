@@ -111,7 +111,7 @@ def init_session():
     st.session_state.session_done    = False
     st.session_state.error           = None
 
-    with st.spinner("🧠 Groq is thinking... fetching your high-yield questions."):
+    with st.spinner("☕ Paging the Chief Resident for this morning's case files..."):
         try:
             questions = generate_questions(st.session_state.used_questions)
             st.session_state.questions = questions
