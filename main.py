@@ -122,7 +122,7 @@ def init_session():
     # Add a session_id to keep button keys unique across sessions
     st.session_state.session_id      = random.randint(1000, 9999)
 
-    with st.spinner("🔬 Scanning medical database for NEET PG 2026 yield patterns..."):
+    with st.spinner("☕ Paging the Chief Resident for this morning's case files..."):
         try:
             questions = generate_questions(st.session_state.used_questions)
             st.session_state.questions = questions
@@ -154,11 +154,7 @@ div[data-testid="stButton"] button {
     padding: 0.55rem 0.9rem;
     font-size: 0.93rem;
 }
-div[data-testid="stMetric"] {
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 0.5rem 0.75rem;
-}
+
 </style>
 """, unsafe_allow_html=True)
 
